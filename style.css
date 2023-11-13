@@ -60,5 +60,15 @@ padding: 10px;
 .incorrect{
     background-color: red;
 }
+#restart{
+    background-color: white;
+    border:2px solid #7752fe;
+    width:50%;
+    border-radius:7px;
+    padding: 7px;
+    font-size: 16px;
+    display:none;
+    margin:0 auto 10px;   
+}
 
 
