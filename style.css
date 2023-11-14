@@ -5,12 +5,7 @@
     box-sizing: border-box;
     color:  #7752FE;
 }
-.container{
-    min-height:100vh ;
-    background-color: aliceblue;
-    border-top:1px solid aliceblue;
 
-}
 .app{
 width:600px;
 margin:50px auto 0;
