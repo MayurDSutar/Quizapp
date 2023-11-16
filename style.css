@@ -65,5 +65,12 @@ padding: 10px;
     display:none;
     margin:0 auto 10px;   
 }
+#restart:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.01) translateY(-3px);
+    background-color: #7752FE;
+    color:white;
+
+}
 
 
