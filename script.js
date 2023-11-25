@@ -71,9 +71,10 @@ const quest = document.getElementById('question');
 const btn1 = document.getElementsByClassName('btn');
 const nxt = document.getElementById('nxt');
 const btn2 = Array.from(btn1);
-const div = document.getElementById('options');
-const rebtn = document.getElementById('restart');
-rebtn.addEventListener('click', startquiz);
+const options = document.getElementById('options');
+const start=document.querySelector("body > header > button.start.deco");
+start.addEventListener('click',startquiz);
+const app= document.querySelector('.app');
 
 let currentquestionindex = 0;
 let score = 0;
@@ -82,8 +83,10 @@ let questionno = 0;
 function startquiz() {
     currentquestionindex = 0;
     score = 0;
-    div.style.display = 'block';
-    rebtn.style.display = 'none';
+    app.style.display='block';
+    options.style.display = 'block';
+    start.style.display='none';
+    
     showquestion()
 }
 function showquestion() {
@@ -140,8 +143,8 @@ function handler() {
     }
     else {
         quest.innerHTML = 'Your done with quiz and your score is ' + `${score}/${questions.length}`;
-        div.style.display = 'none';
-        rebtn.style.display = 'block';
+        options.style.display = 'none';
+        start.style.display='block';
 
 
 

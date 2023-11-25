@@ -31,7 +31,12 @@ header h1{
     margin-right: 40px;
 }
 
+.restart{
+    display: none;
+}
+
 .app{
+display:none;
 width:600px;
 margin:50px auto 0;
 background-color: white;
@@ -72,11 +77,18 @@ border-radius: 14px;
     display: none;
     margin:0 auto 10px;
 }
+#nxt:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #7752FE;
+    color:white;
+}
 .correct{
     background-color: greenyellow;
+    color: #fff;
 }
 .incorrect{
     background-color: red;
+    color:#fff
 }
 #restart{
     background-color: white;
@@ -88,9 +100,8 @@ border-radius: 14px;
     display:none;
     margin:0 auto 10px;   
 }
-#restart:hover{
+.restart:hover , .start:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: scale(1.01) translateY(-3px);
     background-color: #7752FE;
     color:white;
 
